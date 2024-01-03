@@ -1,27 +1,25 @@
-
 public class Person {
-	private String Name="";
-	private int age = 18;	
-// class with name and age and with the default age 18
-public void PersonDetails() {
-	System.out.println("The name of the person is  : " + Name); 
-	System.out.println("The default age of the person is  : " + age ); 
-}
-// Method to display name and age 
-	
-public static void main(String[] args){	
-	Person nameandage = new Person();
-	nameandage.Name="Ranjith";
-	nameandage.age=18;
-//object is initialized with name and age
-nameandage.PersonDetails();
-	}
+    String Name;
+    int Age;
 
-	
-	
-	
+    public Person(String Name, int Age)
+    { this.Name=Name;
+        this.Age=Age;
 
-	
-	
+
+    }
+    public static void main(String[] args)
+    {Person a = new Person("RAnjith",24);
+        System.out.println("Name : " + a.Name + "/n Age: " + a.Age);
+        Employee b = new Employee("Ranjith",24,"a42",20000);
+        System.out.print("Name : " + b.Name + "/nAge: " + b.Age + "EMp ID : " + b.employeeID + "Salary : " + b.Salary);
+
+
+
+
+
+
+    }
+
+
 }
-	
